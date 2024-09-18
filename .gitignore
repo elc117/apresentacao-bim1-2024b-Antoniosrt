@@ -1,0 +1,15 @@
+# Ignore build artifacts
+dist/
+dist-*/
+
+# Ignore executables
+meuprograma
+
+
+# Ignore Cabal files
+*.cabal
+*.hi
+*.o
+*.so
+*.dyn_o
+*.dyn_hi
