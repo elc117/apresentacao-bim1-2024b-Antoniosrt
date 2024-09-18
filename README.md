@@ -101,6 +101,13 @@ let reverseOlaMundo = map reverse ["ola", "mundo"]
 
 Aqui, map aplica reverse a cada string da lista ["ola", "mundo"], resultando em ["alo", "odnum"].
 
+
+# Como rodar
+```
+ghc -o meuprograma high_order_functions.hs
+```
+
+
 Saída Esperada
 
 Ao executar o código, você verá uma saída similar a esta:
