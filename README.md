@@ -4,16 +4,11 @@
 Funções de alta ordem (ou higher-order functions) são funções que podem receber outras funções como argumentos e/ou retornar funções como resultado. Elas são um conceito fundamental em linguagens funcionais como Haskell, permitindo maior modularidade e reutilização de código.
 
 Exemplos comuns de funções de alta ordem incluem:
+- `map`: Aplica uma função a todos os elementos de uma lista.
+- `filter`: Seleciona elementos de uma lista com base em uma condição.
+- `foldl` / `foldr`: Reduz uma lista a um único valor utilizando uma função acumuladora.
 
-    map: Aplica uma função a todos os elementos de uma lista.
-    filter: Seleciona elementos de uma lista com base em uma condição.
-    foldl / foldr: Reduz uma lista a um único valor utilizando uma função acumuladora.
-
-Neste projeto, vamos explorar funções de alta ordem em Haskell com um código que utiliza map, filter, reverse, e funções personalizadas.
-Código
-
-haskell
-
+```haskell
 soma :: Int -> Int -> Int
 soma x y = x + y
 
@@ -44,6 +39,7 @@ main = do
     print (olaMundo)
     print (reverseOlaMundo)
     print(map reverse reverseOlaMundo)
+```
 
 Explicação do Código
 Função soma
@@ -134,7 +130,8 @@ lua
 ["ola","mundo"]
 ["alo","odnum"]
 ["ola","mundo"]
+```
 
-Conclusão
+### Conclusão
 
-Este exemplo demonstra como funções de alta ordem como map e filter podem ser usadas para manipular listas de maneira eficiente em Haskell. Essas funções permitem escrever código mais conciso e expressivo, aproveitando o poder da programação funcional.
+Este exemplo demonstra como funções de alta ordem como `map` e `filter` podem ser usadas para manipular listas de maneira eficiente em Haskell. Essas funções permitem escrever código mais conciso e expressivo, aproveitando o poder da programação funcional.
