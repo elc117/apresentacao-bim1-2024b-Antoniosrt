@@ -5,7 +5,7 @@ main :: IO ()
 main = do
     let lista = [1..10]
     let listaComSomaParaCadaElemento = map (soma 10) lista
-    print ("Map utilizando função soma")
+    print ("Map utilizando funcao soma")
     print (listaComSomaParaCadaElemento)
 
     let listaFiltrandoOsPares = filter odd lista
