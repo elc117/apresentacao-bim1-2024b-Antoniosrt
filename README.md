@@ -44,19 +44,12 @@ main = do
 Explicação do Código
 Função soma
 
-haskell
-
 soma :: Int -> Int -> Int
 soma x y = x + y
 
-A função soma recebe dois inteiros e retorna a soma deles. No exemplo, utilizamos essa função em combinação com map, que é uma função de alta ordem.
-Função map
 
 map é usada para aplicar uma função a todos os elementos de uma lista. No código, temos diferentes usos de map:
 
-    Aplicando a função soma a uma lista:
-
-    haskell
 
 let listaComSomaParaCadaElemento = map (soma 10) lista
 print (listaComSomaParaCadaElemento)
@@ -65,16 +58,12 @@ Aqui, map aplica a função soma 10 a cada elemento da lista [1..10], resultando
 
 Mapeando sobre listas de listas:
 
-haskell
-
 let mapComMap = map (map (+1)) [[1, 2, 3], [4, 5, 6]]
 print (mapComMap)
 
 Neste caso, map é usado duas vezes. O primeiro map aplica a função (map (+1)) a cada sublista, e o segundo map incrementa cada elemento dessas sublistas.
 
 Map com reverse:
-
-haskell
 
     let reverseOlaMundo = map reverse ["ola", "mundo"]
     print (reverseOlaMundo)
@@ -85,9 +74,7 @@ Função filter
 
 filter é usada para filtrar elementos de uma lista com base em uma condição.
 
-    Filtrando os números ímpares:
-
-    haskell
+Filtrando os números ímpares:
 
 let listaFiltrandoOsPares = filter odd lista
 print (listaFiltrandoOsPares)
@@ -95,8 +82,6 @@ print (listaFiltrandoOsPares)
 Aqui, filter é usado com a função odd para retornar apenas os números ímpares da lista [1..10].
 
 Combinando filter com map:
-
-haskell
 
     let filterComMap = map (filter (\x -> x `mod` 2 == 0)) [lista, lista2]
     print (filterComMap)
@@ -107,16 +92,15 @@ Função reverse
 
 reverse é uma função padrão de Haskell que reverte uma lista (ou string, já que strings são listas de caracteres).
 
-haskell
-
+```haskell
 let reverseOlaMundo = map reverse ["ola", "mundo"]
+```
 
 Aqui, map aplica reverse a cada string da lista ["ola", "mundo"], resultando em ["alo", "odnum"].
+
 Saída Esperada
 
 Ao executar o código, você verá uma saída similar a esta:
-
-lua
 
 "Map utilizando função soma"
 [11,12,13,14,15,16,17,18,19,20]
@@ -130,8 +114,7 @@ lua
 ["ola","mundo"]
 ["alo","odnum"]
 ["ola","mundo"]
-```
 
 ### Conclusão
 
-Este exemplo demonstra como funções de alta ordem como `map` e `filter` podem ser usadas para manipular listas de maneira eficiente em Haskell. Essas funções permitem escrever código mais conciso e expressivo, aproveitando o poder da programação funcional.
+Este exemplo demonstra como funções de alta ordem como `map` e `filter` podem ser usadas para manipular listas. 
