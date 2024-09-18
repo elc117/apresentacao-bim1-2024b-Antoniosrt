@@ -75,16 +75,19 @@ Função filter
 filter é usada para filtrar elementos de uma lista com base em uma condição.
 
 Filtrando os números ímpares:
-
+```
 let listaFiltrandoOsPares = filter odd lista
 print (listaFiltrandoOsPares)
+```
 
 Aqui, filter é usado com a função odd para retornar apenas os números ímpares da lista [1..10].
 
 Combinando filter com map:
 
+    ```
     let filterComMap = map (filter (\x -> x `mod` 2 == 0)) [lista, lista2]
     print (filterComMap)
+    ```
 
     Nesta linha, filter é usado dentro de map para filtrar apenas os números pares de duas listas.
 
@@ -92,7 +95,7 @@ Função reverse
 
 reverse é uma função padrão de Haskell que reverte uma lista (ou string, já que strings são listas de caracteres).
 
-```haskell
+```
 let reverseOlaMundo = map reverse ["ola", "mundo"]
 ```
 
