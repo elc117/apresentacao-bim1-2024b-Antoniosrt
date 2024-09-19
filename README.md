@@ -128,3 +128,9 @@ Ao executar o código, você verá uma saída similar a esta:
 ### Conclusão
 
 Este exemplo demonstra como funções de alta ordem como `map` e `filter` podem ser usadas para manipular listas. 
+
+
+### Referencias 
+https://haskell.tailorfontela.com.br/higher-order-functions
+https://haskell.pesquisa.ufabc.edu.br/haskell/06.higher.order/
+https://folivetti.github.io/courses/Haskell/Tipos
